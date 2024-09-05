@@ -1,0 +1,397 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>api - cwinter.codecraft.core.api</title>
+          <meta name="description" content="api - cwinter.codecraft.core.api" />
+          <meta name="keywords" content="api cwinter.codecraft.core.api" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'cwinter.codecraft.core.api.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="cwinter">cwinter</a>.<a href="../../package.html" class="extype" name="cwinter.codecraft">codecraft</a>.<a href="../package.html" class="extype" name="cwinter.codecraft.core">core</a></p>
+        <h1>api</h1><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">api</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="cwinter.codecraft.core.api.CodeCraftException" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CodeCraftExceptionextendsException"></a>
+      <a id="CodeCraftException:CodeCraftException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CodeCraftException.html"><span class="name">CodeCraftException</span></a><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@CodeCraftExceptionextendsException" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Base class for all exceptions specific to CodeCraft.</p>
+    </li><li name="cwinter.codecraft.core.api.Drone" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DroneextendsAnyRef"></a>
+      <a id="Drone:Drone"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Drone.html"><span class="name">Drone</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@DroneextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@JSExportAll</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="cwinter.codecraft.core.api.DroneController" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DroneControllerextendsDroneControllerBase"></a>
+      <a id="DroneController:DroneController"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DroneController.html"><span class="name">DroneController</span></a><span class="result"> extends <a href="DroneControllerBase.html" class="extype" name="cwinter.codecraft.core.api.DroneControllerBase">DroneControllerBase</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@DroneControllerextendsDroneControllerBase" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A drone controller is an object that governs the behaviour of a drone.</p><div class="fullcomment"><div class="comment cmt"><p>A drone controller is an object that governs the behaviour of a drone.
+It exposes a wide range of methods to query the underlying drone's state and give it commands.
+You can inherit from this class to and override the <code>onEvent</code> methods to implement a
+drone controller with custom behaviour.</p><p>In Java, use <a href="JDroneController.html" class="extype" name="cwinter.codecraft.core.api.JDroneController">JDroneController</a> instead.
+</p></div></div>
+    </li><li name="cwinter.codecraft.core.api.DroneControllerBase" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DroneControllerBaseextendsDrone"></a>
+      <a id="DroneControllerBase:DroneControllerBase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DroneControllerBase.html"><span class="name">DroneControllerBase</span></a><span class="result"> extends <a href="Drone.html" class="extype" name="cwinter.codecraft.core.api.Drone">Drone</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@DroneControllerBaseextendsDrone" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A drone controller is an object that governs the behaviour of a drone.</p><div class="fullcomment"><div class="comment cmt"><p>A drone controller is an object that governs the behaviour of a drone.
+It exposes a wide range of methods to query the underlying drone's state and give it commands.
+You can inherit from this class and override the <code>onEvent</code> methods to implement a
+drone controller with custom behaviour.</p><p>NOTE: You should not actually use this class, but one of it's specialisations.
+In Scala, use <a href="DroneController.html" class="extype" name="cwinter.codecraft.core.api.DroneController">DroneController</a> and in Java use <a href="JDroneController.html" class="extype" name="cwinter.codecraft.core.api.JDroneController">JDroneController</a>.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@JSExportAll</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="cwinter.codecraft.core.api.DroneSpec" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DroneSpecextendsProductwithSerializable"></a>
+      <a id="DroneSpec:DroneSpec"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DroneSpec.html"><span class="name">DroneSpec</span></a><span class="params">(<span name="storageModules">storageModules: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a> = <span class="symbol">0</span></span>, <span name="missileBatteries">missileBatteries: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a> = <span class="symbol">0</span></span>, <span name="constructors">constructors: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a> = <span class="symbol">0</span></span>, <span name="engines">engines: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a> = <span class="symbol">0</span></span>, <span name="shieldGenerators">shieldGenerators: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a> = <span class="symbol">0</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@DroneSpecextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Specifies the modules equipped by a drone and computes various properties of a Drone with this
+configuration of modules.</p><div class="fullcomment"><div class="comment cmt"><p>Specifies the modules equipped by a drone and computes various properties of a Drone with this
+configuration of modules.</p><p>Currently, the total number of modules is currently limited to 10 but this restriction will likely be
+lifted in the future.
+</p></div><dl class="paramcmts block"><dt class="param">storageModules</dt><dd class="cmt"><p>Number of storage modules. Allows for storage of mineral crystals and energy globes.</p></dd><dt class="param">missileBatteries</dt><dd class="cmt"><p>Number of missile batteries. Allows for firing homing missiles.</p></dd><dt class="param">constructors</dt><dd class="cmt"><p>Number of constructors.
+                    Allows for constructing new drones and moving minerals from/to other drones.</p></dd><dt class="param">engines</dt><dd class="cmt"><p>Number of engines. Increases move speed.</p></dd><dt class="param">shieldGenerators</dt><dd class="cmt"><p>Number of shield generators. Gives the drone an additional 7 hitpoints each.
+                        Shields regenerate over time.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@JSExportAll</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="cwinter.codecraft.core.api.JDroneController" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="JDroneControllerextendsDroneControllerBase"></a>
+      <a id="JDroneController:JDroneController"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JDroneController.html"><span class="name">JDroneController</span></a><span class="result"> extends <a href="DroneControllerBase.html" class="extype" name="cwinter.codecraft.core.api.DroneControllerBase">DroneControllerBase</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@JDroneControllerextendsDroneControllerBase" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A drone controller is an object that governs the behaviour of a drone.</p><div class="fullcomment"><div class="comment cmt"><p>A drone controller is an object that governs the behaviour of a drone.
+It exposes a wide range of methods to query the underlying drone's state and give it commands.
+You can inherit from this class and override the <code>onEvent</code> methods to implement a
+drone controller with custom behaviour.</p><p>In Scala, use <a href="DroneController.html" class="extype" name="cwinter.codecraft.core.api.DroneController">DroneController</a> instead.
+</p></div></div>
+    </li><li name="cwinter.codecraft.core.api.MetaController" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="MetaControllerextendsAnyRef"></a>
+      <a id="MetaController:MetaController"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MetaController.html"><span class="name">MetaController</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@MetaControllerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">In addition to your <a href="DroneController.html" class="extype" name="cwinter.codecraft.core.api.DroneController">DroneController</a>s you can have one <a href="MetaController.html" class="extype" name="cwinter.codecraft.core.api.MetaController">MetaController</a>, which has a method
+that will be called once every tick before the onEvent methods on your drone controllers are called.</p><div class="fullcomment"><div class="comment cmt"><p>In addition to your <a href="DroneController.html" class="extype" name="cwinter.codecraft.core.api.DroneController">DroneController</a>s you can have one <a href="MetaController.html" class="extype" name="cwinter.codecraft.core.api.MetaController">MetaController</a>, which has a method
+that will be called once every tick before the onEvent methods on your drone controllers are called.
+This can be useful if you want to perform some global computation once every timestep.
+You can instantiate your <a href="MetaController.html" class="extype" name="cwinter.codecraft.core.api.MetaController">MetaController</a> using the <a href="DroneControllerBase.html#metaController:Option[cwinter.codecraft.core.api.MetaController]" class="extmbr" name="cwinter.codecraft.core.api.DroneControllerBase#metaController">DroneControllerBase.metaController</a> method.
+</p></div></div>
+    </li><li name="cwinter.codecraft.core.api.MineralCrystal" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MineralCrystalextendsAnyRef"></a>
+      <a id="MineralCrystal:MineralCrystal"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MineralCrystal.html"><span class="name">MineralCrystal</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@MineralCrystalextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A mineral crystal.</p><div class="fullcomment"><div class="comment cmt"><p>A mineral crystal.
+Can be harvested by drones with storage modules to obtain resources.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@JSExportAll</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="cwinter.codecraft.core.api.ObjectNotVisibleException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ObjectNotVisibleExceptionextendsCodeCraftException"></a>
+      <a id="ObjectNotVisibleException:ObjectNotVisibleException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ObjectNotVisibleException.html"><span class="name">ObjectNotVisibleException</span></a><span class="result"> extends <a href="CodeCraftException.html" class="extype" name="cwinter.codecraft.core.api.CodeCraftException">CodeCraftException</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@ObjectNotVisibleExceptionextendsCodeCraftException" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.api.Player" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlayerextendsAnyRef"></a>
+      <a id="Player:Player"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Player.html"><span class="name">Player</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@PlayerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Base trait for all objects representing a player.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="cwinter.codecraft.core.api.BluePlayer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BluePlayer"></a>
+      <a id="BluePlayer:BluePlayer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BluePlayer$.html"><span class="name">BluePlayer</span></a><span class="result"> extends <a href="Player.html" class="extype" name="cwinter.codecraft.core.api.Player">Player</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@BluePlayer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The blue player.</p>
+    </li><li name="cwinter.codecraft.core.api.GameConstants" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GameConstants"></a>
+      <a id="GameConstants:GameConstants"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GameConstants$.html"><span class="name">GameConstants</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@GameConstants" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.api.OrangePlayer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OrangePlayer"></a>
+      <a id="OrangePlayer:OrangePlayer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="OrangePlayer$.html"><span class="name">OrangePlayer</span></a><span class="result"> extends <a href="Player.html" class="extype" name="cwinter.codecraft.core.api.Player">Player</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@OrangePlayer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The orange player.</p>
+    </li><li name="cwinter.codecraft.core.api.RedPlayer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedPlayer"></a>
+      <a id="RedPlayer:RedPlayer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RedPlayer$.html"><span class="name">RedPlayer</span></a><span class="result"> extends <a href="Player.html" class="extype" name="cwinter.codecraft.core.api.Player">Player</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@RedPlayer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The red player.</p>
+    </li><li name="cwinter.codecraft.core.api.TheGameMaster" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TheGameMaster"></a>
+      <a id="TheGameMaster:TheGameMaster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TheGameMaster$.html"><span class="name">TheGameMaster</span></a><span class="result"> extends <span class="extype" name="cwinter.codecraft.core.api.GameMasterLike">GameMasterLike</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.api.package@TheGameMaster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Main entry point to start the game.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

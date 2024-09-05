@@ -1,0 +1,328 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>game - cwinter.codecraft.core.game</title>
+          <meta name="description" content="game - cwinter.codecraft.core.game" />
+          <meta name="keywords" content="game cwinter.codecraft.core.game" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'cwinter.codecraft.core.game.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="cwinter">cwinter</a>.<a href="../../package.html" class="extype" name="cwinter.codecraft">codecraft</a>.<a href="../package.html" class="extype" name="cwinter.codecraft.core">core</a></p>
+        <h1>game</h1><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">game</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="cwinter.codecraft.core.game.DroneCount" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DroneCountextendsWinConditionwithProductwithSerializable"></a>
+      <a id="DroneCount:DroneCount"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DroneCount.html"><span class="name">DroneCount</span></a><span class="params">(<span name="count">count: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="WinCondition.html" class="extype" name="cwinter.codecraft.core.game.WinCondition">WinCondition</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@DroneCountextendsWinConditionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DroneWorldSimulatorextendsSimulator"></a>
+      <a id="DroneWorldSimulator:DroneWorldSimulator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DroneWorldSimulator.html"><span class="name">DroneWorldSimulator</span></a><span class="result"> extends <span class="extype" name="cwinter.codecraft.graphics.engine.Simulator">Simulator</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@DroneWorldSimulatorextendsSimulator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Aggregates all datastructures required to run a game and implements the game loop.</p>
+    </li><li name="cwinter.codecraft.core.game.LargestFleet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LargestFleetextendsWinConditionwithProductwithSerializable"></a>
+      <a id="LargestFleet:LargestFleet"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LargestFleet.html"><span class="name">LargestFleet</span></a><span class="params">(<span name="timeout">timeout: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="WinCondition.html" class="extype" name="cwinter.codecraft.core.game.WinCondition">WinCondition</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@LargestFleetextendsWinConditionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.game.MineralSpawn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MineralSpawnextendsProductwithSerializable"></a>
+      <a id="MineralSpawn:MineralSpawn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MineralSpawn.html"><span class="name">MineralSpawn</span></a><span class="params">(<span name="size">size: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="position">position: <span class="extype" name="cwinter.codecraft.util.maths.Vector2">Vector2</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@MineralSpawnextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Describes the initial position and size of a mineral crystal.</p>
+    </li><li name="cwinter.codecraft.core.game.MultiplayerConfig" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MultiplayerConfigextendsAnyRef"></a>
+      <a id="MultiplayerConfig:MultiplayerConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MultiplayerConfig.html"><span class="name">MultiplayerConfig</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@MultiplayerConfigextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.game.Settings" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SettingsextendsProductwithSerializable"></a>
+      <a id="Settings:Settings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Settings.html"><span class="name">Settings</span></a><span class="params">(<span name="allowMessages">allowMessages: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>, <span name="showSightRadius">showSightRadius: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">false</span></span>, <span name="showMissileRadius">showMissileRadius: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">false</span></span>, <span name="allowEnergyGlobeAnimation">allowEnergyGlobeAnimation: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>, <span name="allowMissileAnimation">allowMissileAnimation: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>, <span name="allowModuleAnimation">allowModuleAnimation: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>, <span name="allowCollisionAnimation">allowCollisionAnimation: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>, <span name="recordReplays">recordReplays: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>, <span name="allowFramePrecomputation">allowFramePrecomputation: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@SettingsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Aggregates various display settings.</p><div class="fullcomment"><div class="comment cmt"><p>Aggregates various display settings.
+</p></div><dl class="paramcmts block"><dt class="param">allowMessages</dt><dd class="cmt"><p>Drones are allowed to display warnings or user generated messages.</p></dd><dt class="param">showSightRadius</dt><dd class="cmt"><p>If true, the sight radius for all drones is shown.</p></dd><dt class="param">showMissileRadius</dt><dd class="cmt"><p>If true, the missile radius for all drones is shown.</p></dd><dt class="param">allowEnergyGlobeAnimation</dt><dd class="cmt"><p>Energy globes move between drones and modules, rather then teleporting instantly.</p></dd><dt class="param">allowMissileAnimation</dt><dd class="cmt"><p>Homing missiles have a trail that shows their path.</p></dd><dt class="param">allowModuleAnimation</dt><dd class="cmt"><p>Animate modules such as engines.</p></dd><dt class="param">recordReplays</dt><dd class="cmt"><p>If set to false, replays are not recorded.</p></dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.Spawn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SpawnextendsProductwithSerializable"></a>
+      <a id="Spawn:Spawn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Spawn.html"><span class="name">Spawn</span></a><span class="params">(<span name="droneSpec">droneSpec: <a href="../api/DroneSpec.html" class="extype" name="cwinter.codecraft.core.api.DroneSpec">DroneSpec</a></span>, <span name="position">position: <span class="extype" name="cwinter.codecraft.util.maths.Vector2">Vector2</span></span>, <span name="player">player: <a href="../api/Player.html" class="extype" name="cwinter.codecraft.core.api.Player">Player</a></span>, <span name="resources">resources: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a> = <span class="symbol">0</span></span>, <span name="name">name: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@SpawnextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Describes the initial position and state of a drone.</p><div class="fullcomment"><div class="comment cmt"><p>Describes the initial position and state of a drone.
+</p></div><dl class="paramcmts block"><dt class="param">droneSpec</dt><dd class="cmt"><p>The specification for the modules and size of the drone.</p></dd><dt class="param">position</dt><dd class="cmt"><p>The initial position for the drone.</p></dd><dt class="param">player</dt><dd class="cmt"><p>The owner of the drone.</p></dd><dt class="param">resources</dt><dd class="cmt"><p>The amount of resources initially stored by the drone.</p></dd><dt class="param">name</dt><dd class="cmt"><p>Optional name by which the drone can be retrieved in the JavaScript version of the game.</p></dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.WinCondition" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="WinConditionextendsAnyRef"></a>
+      <a id="WinCondition:WinCondition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="WinCondition.html"><span class="name">WinCondition</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@WinConditionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.game.WorldMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="WorldMapextendsProductwithSerializable"></a>
+      <a id="WorldMap:WorldMap"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorldMap.html"><span class="name">WorldMap</span></a><span class="params">(<span name="minerals">minerals: <span class="extype" name="scala.Seq">Seq</span>[<a href="MineralSpawn.html" class="extype" name="cwinter.codecraft.core.game.MineralSpawn">MineralSpawn</a>]</span>, <span name="size">size: <span class="extype" name="cwinter.codecraft.util.maths.Rectangle">Rectangle</span></span>, <span name="initialDrones">initialDrones: <span class="extype" name="scala.Seq">Seq</span>[<a href="Spawn.html" class="extype" name="cwinter.codecraft.core.game.Spawn">Spawn</a>]</span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@WorldMapextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the initial world state for a game.</p><div class="fullcomment"><div class="comment cmt"><p>Defines the initial world state for a game.
+</p></div><dl class="paramcmts block"><dt class="param">minerals</dt><dd class="cmt"><p>The initial set of mineral crystals.</p></dd><dt class="param">size</dt><dd class="cmt"><p>The world boundary.</p></dd><dt class="param">initialDrones</dt><dd class="cmt"><p>The initial set of drones.</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="cwinter.codecraft.core.game.DestroyAllEnemies" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DestroyAllEnemies"></a>
+      <a id="DestroyAllEnemies:DestroyAllEnemies"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DestroyAllEnemies$.html"><span class="name">DestroyAllEnemies</span></a><span class="result"> extends <a href="WinCondition.html" class="extype" name="cwinter.codecraft.core.game.WinCondition">WinCondition</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@DestroyAllEnemies" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.game.DestroyEnemyMotherships" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DestroyEnemyMotherships"></a>
+      <a id="DestroyEnemyMotherships:DestroyEnemyMotherships"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DestroyEnemyMotherships$.html"><span class="name">DestroyEnemyMotherships</span></a><span class="result"> extends <a href="WinCondition.html" class="extype" name="cwinter.codecraft.core.game.WinCondition">WinCondition</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@DestroyEnemyMotherships" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.game.WinCondition" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WinCondition"></a>
+      <a id="WinCondition:WinCondition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WinCondition$.html"><span class="name">WinCondition</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@WinCondition" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.game.WorldMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorldMap"></a>
+      <a id="WorldMap:WorldMap"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WorldMap$.html"><span class="name">WorldMap</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.package@WorldMap" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

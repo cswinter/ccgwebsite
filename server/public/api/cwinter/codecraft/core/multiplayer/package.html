@@ -1,0 +1,308 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>multiplayer - cwinter.codecraft.core.multiplayer</title>
+          <meta name="description" content="multiplayer - cwinter.codecraft.core.multiplayer" />
+          <meta name="keywords" content="multiplayer cwinter.codecraft.core.multiplayer" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'cwinter.codecraft.core.multiplayer.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="cwinter">cwinter</a>.<a href="../../package.html" class="extype" name="cwinter.codecraft">codecraft</a>.<a href="../package.html" class="extype" name="cwinter.codecraft.core">core</a></p>
+        <h1>multiplayer</h1><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">multiplayer</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="cwinter.codecraft.core.multiplayer.Completed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CompletedextendsProductwithSerializable"></a>
+      <a id="Completed:Completed"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Completed.html"><span class="name">Completed</span></a><span class="params">(<span name="gameResult">gameResult: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@CompletedextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.ConnectionState" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConnectionStateextendsAnyRef"></a>
+      <a id="ConnectionState:ConnectionState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ConnectionState.html"><span class="name">ConnectionState</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@ConnectionStateextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.DetailedStatus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DetailedStatusextendsProductwithSerializable"></a>
+      <a id="DetailedStatus:DetailedStatus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DetailedStatus.html"><span class="name">DetailedStatus</span></a><span class="params">(<span name="clientWaiting">clientWaiting: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="connections">connections: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="games">games: <span class="extype" name="scala.Seq">Seq</span>[<a href="GameStatus.html" class="extype" name="cwinter.codecraft.core.multiplayer.GameStatus">GameStatus</a>]</span>, <span name="timestamp">timestamp: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="startTimestamp">startTimestamp: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@DetailedStatusextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.Error" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ErrorextendsConnectionStatewithProductwithSerializable"></a>
+      <a id="Error:Error"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Error.html"><span class="name">Error</span></a><span class="params">(<span name="x">x: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result"> extends <a href="ConnectionState.html" class="extype" name="cwinter.codecraft.core.multiplayer.ConnectionState">ConnectionState</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@ErrorextendsConnectionStatewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.FoundGame" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FoundGameextendsConnectionStatewithProductwithSerializable"></a>
+      <a id="FoundGame:FoundGame"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FoundGame.html"><span class="name">FoundGame</span></a><span class="params">(<span name="connection">connection: (<a href="../api/DroneControllerBase.html" class="extype" name="cwinter.codecraft.core.api.DroneControllerBase">DroneControllerBase</a>) ⇒ <a href="../game/DroneWorldSimulator.html" class="extype" name="cwinter.codecraft.core.game.DroneWorldSimulator">DroneWorldSimulator</a></span>)</span><span class="result"> extends <a href="ConnectionState.html" class="extype" name="cwinter.codecraft.core.multiplayer.ConnectionState">ConnectionState</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@FoundGameextendsConnectionStatewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.GameStatus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GameStatusextendsProductwithSerializable"></a>
+      <a id="GameStatus:GameStatus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GameStatus.html"><span class="name">GameStatus</span></a><span class="params">(<span name="closeReason">closeReason: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="fps">fps: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="averageFPS">averageFPS: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="timestep">timestep: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="startTimestamp">startTimestamp: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="endTimestamp">endTimestamp: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>, <span name="msSinceLastResponse">msSinceLastResponse: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="currentPhase">currentPhase: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="bandwidthUp">bandwidthUp: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Double" class="extype" target="_top">Double</a></span>, <span name="bandwidthDown">bandwidthDown: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@GameStatusextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.ServerConnection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServerConnectionextendsAnyRef"></a>
+      <a id="ServerConnection:ServerConnection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ServerConnection.html"><span class="name">ServerConnection</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@ServerConnectionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.Status" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StatusextendsProductwithSerializable"></a>
+      <a id="Status:Status"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Status.html"><span class="name">Status</span></a><span class="params">(<span name="clientWaiting">clientWaiting: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="runningGames">runningGames: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="connections">connections: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="maxConnections">maxConnections: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@StatusextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="cwinter.codecraft.core.multiplayer.Connecting" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Connecting"></a>
+      <a id="Connecting:Connecting"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Connecting$.html"><span class="name">Connecting</span></a><span class="result"> extends <a href="ConnectionState.html" class="extype" name="cwinter.codecraft.core.multiplayer.ConnectionState">ConnectionState</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@Connecting" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.CrossPlatformWebsocket" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CrossPlatformWebsocket"></a>
+      <a id="CrossPlatformWebsocket:CrossPlatformWebsocket"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CrossPlatformWebsocket$.html"><span class="name">CrossPlatformWebsocket</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@CrossPlatformWebsocket" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.Server" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Server"></a>
+      <a id="Server:Server"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Server$.html"><span class="name">Server</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@Server" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.multiplayer.WaitingForPlayer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WaitingForPlayer"></a>
+      <a id="WaitingForPlayer:WaitingForPlayer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WaitingForPlayer$.html"><span class="name">WaitingForPlayer</span></a><span class="result"> extends <a href="ConnectionState.html" class="extype" name="cwinter.codecraft.core.multiplayer.ConnectionState">ConnectionState</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.multiplayer.package@WaitingForPlayer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

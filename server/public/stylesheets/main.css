@@ -1,0 +1,305 @@
+#webgl-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#text-canvas {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 10;
+}
+
+#js-console {
+    width: 100%;
+    background-color: #222;
+    font-family: monospace;
+    font-size: 1em;
+    color: white;
+}
+
+#js-console input[type=text] {
+    width: calc(100% - 30px);
+    background-color: #222;
+    color: #eee;
+    border: none;
+    outline: none;
+}
+
+div#controls-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 42px;
+    background-color: #222;
+    padding: 3px;
+}
+
+div#tutorial-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #111;
+    border: solid 1px #337ab7;
+    padding: 3px;
+}
+
+div#tutorial-text, div#cheat-sheet {
+    font-family: "Verdana", sans-serif;
+    font-size: 1em;
+    color: white;
+    background-color: #111;
+    overflow: auto;
+}
+
+div#tutorial-text {
+    height: 190px;
+}
+
+div#tutorial-text code, div#cheat-sheet code {
+    background-color: #333;
+    color: white;
+}
+
+div#tutorial-text pre, div#cheat-sheet pre {
+    background-color: #333;
+    color: white;
+    border-color: black;
+}
+
+#tutorial-button-next {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+#tutorial-button-previous {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+#tutorial-button-hint {
+    position: absolute;
+    left: 178px;
+    bottom: 10px;
+}
+
+div#tutorial-buttons #button-restart-game {
+    position: absolute;
+    left: 189px;
+    bottom: 10px;
+}
+
+#js-console-output {
+    display: block;
+    width: 100%;
+    height: calc(100% - 22px);
+    background-color: #111;
+    font-family: monospace;
+    font-size: 1em;
+    color: white;
+    overflow-y: scroll;
+}
+
+#js-console-output pre {
+    background-color: #111;
+    border: none;
+    font-family: monospace;
+    font-size: 1em;
+    color: white;
+}
+
+#js-console-output .js-error {
+    color: red;
+}
+
+.game-col {
+    float: right;
+    width: calc(100% - 450px);
+    height: 100%;
+}
+
+.editor-col {
+    float: left;
+    width: 450px;
+    height: 100%;
+}
+
+.editor-tabs-col {
+    height: calc(100% - 42px);
+    width: 100%;
+}
+
+.editor-tabs-col-small {
+    height: calc(100% - 250px - 42px);
+    width: 100%;
+}
+
+.editor-tab-pane {
+    height: calc(100% - 42px);
+    width: 100%;
+}
+
+.console-col {
+    height: calc(100% - 250px);
+}
+
+.full-height {
+    height: 100%;
+}
+
+.game-container {
+    min-height: 400px;
+    min-width: 800px;
+    height: 100%;
+}
+
+.full-height-rel {
+    position: relative;
+    height: 100%;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body {
+    padding-top: 51px;
+}
+
+div.editor-buttons {
+    background-color: #111;
+}
+
+.editor-button {
+    margin: 3px;
+    width: 68px;
+}
+
+.editor-filename {
+    color: #fff;
+}
+
+div.editor-container {
+    height: calc(100% - 40px);
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.fill {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.tooltip-inner pre {
+    text-align: left;
+}
+
+.tooltip-inner {
+    max-width: 350px;
+    background-color: lightgray;
+    color: black;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: lightgray;
+}
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: lightgray;
+}
+
+/* dark styling for nav tabs */
+.nav-tabs>li.nav-tab-dark.active>a,
+.nav-tabs>li.nav-tab-dark.active>a:hover,
+.nav-tabs>li.nav-tab-dark.active>a:focus,
+.nav-tabs>li.nav-tab-dark>a:hover,
+.nav-tabs>li.nav-tab-dark>a:focus {
+    background-color: #111;
+    border-color: black;
+    border-bottom-color: transparent;
+}
+
+#editor-pane {
+    position: relative;
+}
+
+#editor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.ace-editor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.alert {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    right: 20px;
+    z-index: 100000;
+}
+
+.fixed-width {
+    max-width: 950px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.floating-text {
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.large-floating-text {
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    font-size: 90px;
+}
+#large-text-dim-test {
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    font-size: 90px;
+}
+#small-text-dim-test {
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+}
+
+p.hotkeys-dark kbd {
+    background-color: #111;
+}

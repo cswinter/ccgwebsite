@@ -1,0 +1,1137 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>DroneWorldSimulator - cwinter.codecraft.core.game.DroneWorldSimulator</title>
+          <meta name="description" content="DroneWorldSimulator - cwinter.codecraft.core.game.DroneWorldSimulator" />
+          <meta name="keywords" content="DroneWorldSimulator cwinter.codecraft.core.game.DroneWorldSimulator" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'cwinter.codecraft.core.game.DroneWorldSimulator';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="cwinter">cwinter</a>.<a href="../../package.html" class="extype" name="cwinter.codecraft">codecraft</a>.<a href="../package.html" class="extype" name="cwinter.codecraft.core">core</a>.<a href="package.html" class="extype" name="cwinter.codecraft.core.game">game</a></p>
+        <h1>DroneWorldSimulator</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="cwinter.codecraft.core.game">package game</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DroneWorldSimulator</span><span class="result"> extends <span class="extype" name="cwinter.codecraft.graphics.engine.Simulator">Simulator</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Aggregates all datastructures required to run a game and implements the game loop.
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="cwinter.codecraft.core.game.DroneWorldSimulator">DroneWorldSimulator</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="cwinter.codecraft.graphics.engine.Simulator">Simulator</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="cwinter.codecraft.core.game.DroneWorldSimulator"><span>DroneWorldSimulator</span></li><li class="in" name="cwinter.codecraft.graphics.engine.Simulator"><span>Simulator</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="cwinter.codecraft.core.game.DroneWorldSimulator#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(config:cwinter.codecraft.core.game.GameConfig,eventGenerator:Int=&gt;Seq[cwinter.codecraft.core.game.SimulatorEvent],multiplayerConfig:cwinter.codecraft.core.game.MultiplayerConfig,forceReplayRecorder:Option[cwinter.codecraft.core.replay.ReplayRecorder],settings:cwinter.codecraft.core.game.Settings):cwinter.codecraft.core.game.DroneWorldSimulator"></a>
+      <a id="&lt;init&gt;:DroneWorldSimulator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DroneWorldSimulator</span><span class="params">(<span name="config">config: <span class="extype" name="cwinter.codecraft.core.game.GameConfig">GameConfig</span></span>, <span name="eventGenerator">eventGenerator: (<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a>) ⇒ <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="cwinter.codecraft.core.game.SimulatorEvent">SimulatorEvent</span>] = <span class="symbol">t =&gt; Seq.empty</span></span>, <span name="multiplayerConfig">multiplayerConfig: <a href="MultiplayerConfig.html" class="extype" name="cwinter.codecraft.core.game.MultiplayerConfig">MultiplayerConfig</a> = <span class="symbol">SingleplayerConfig</span></span>, <span name="forceReplayRecorder">forceReplayRecorder: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="cwinter.codecraft.core.replay.ReplayRecorder">ReplayRecorder</span>] = <span class="symbol">None</span></span>, <span name="settings">settings: <a href="Settings.html" class="extype" name="cwinter.codecraft.core.game.Settings">Settings</a> = <span class="symbol">Settings.default</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@&lt;init&gt;(config:cwinter.codecraft.core.game.GameConfig,eventGenerator:Int=&gt;Seq[cwinter.codecraft.core.game.SimulatorEvent],multiplayerConfig:cwinter.codecraft.core.game.MultiplayerConfig,forceReplayRecorder:Option[cwinter.codecraft.core.replay.ReplayRecorder],settings:cwinter.codecraft.core.game.Settings):cwinter.codecraft.core.game.DroneWorldSimulator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">config</dt><dd class="cmt"><p>Describes the initial state of the game world.</p></dd><dt class="param">eventGenerator</dt><dd class="cmt"><p>Allows for triggering custom events.</p></dd><dt class="param">multiplayerConfig</dt><dd class="cmt"><p>Additional configuration for multiplayer games.</p></dd><dt class="param">forceReplayRecorder</dt><dd class="cmt"><p>If set to <code>Some(r)</code>, the Simulator will replay the events recorded by <code>r</code>.</p></dd><dt class="param">settings</dt><dd class="cmt"><p>Additional settings that don't affect gameplay.</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="cwinter.codecraft.graphics.engine.Simulator.Crashed" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CrashedextendsSimulator.this.StatuswithProductwithSerializable"></a>
+      <a id="Crashed:Crashed"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Crashed</span><span class="result"> extends <span class="extype" name="cwinter.codecraft.graphics.engine.Simulator.Status">Status</span> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@CrashedextendsSimulator.this.StatuswithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator.Status" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="StatusextendsAnyRef"></a>
+      <a id="Status:Status"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Status</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@StatusextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator.Stopped" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StoppedextendsSimulator.this.StatuswithProductwithSerializable"></a>
+      <a id="Stopped:Stopped"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Stopped</span><span class="result"> extends <span class="extype" name="cwinter.codecraft.graphics.engine.Simulator.Status">Status</span> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@StoppedextendsSimulator.this.StatuswithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator.Running" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Running"></a>
+      <a id="Running:Running"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Running</span><span class="result"> extends <span class="extype" name="cwinter.codecraft.graphics.engine.Simulator.Status">Status</span> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@Running" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#_measuredFramerate" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_measuredFramerate:Int"></a>
+      <a id="_measuredFramerate:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_measuredFramerate</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@_measuredFramerate:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#_nanoTimeLastMeasurement" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_nanoTimeLastMeasurement:Long"></a>
+      <a id="_nanoTimeLastMeasurement:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_nanoTimeLastMeasurement</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@_nanoTimeLastMeasurement:Long" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#asyncUpdate" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asyncUpdate()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a>
+      <a id="asyncUpdate()(ExecutionContext):Future[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asyncUpdate</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Future" class="extype" target="_top">Future</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@asyncUpdate()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="cwinter.codecraft.core.game.DroneWorldSimulator">DroneWorldSimulator</a> → Simulator</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#currentPhase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="currentPhase:Symbol"></a>
+      <a id="currentPhase:Symbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentPhase</span><span class="result">: <span class="extype" name="scala.Symbol">Symbol</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@currentPhase:Symbol" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#debug" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug:cwinter.codecraft.graphics.engine.Debug"></a>
+      <a id="debug:Debug"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="result">: <span class="extype" name="cwinter.codecraft.graphics.engine.Debug">Debug</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@debug:cwinter.codecraft.graphics.engine.Debug" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#exceptionHandler" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="exceptionHandler:Option[Function1[Throwable,_]]"></a>
+      <a id="exceptionHandler:Option[Function1[Throwable,_]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exceptionHandler</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Function1" class="extype" target="_top">Function1</a>[<span class="extype" name="scala.Throwable">Throwable</span>, _]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@exceptionHandler:Option[Function1[Throwable,_]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#excessMillis" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="excessMillis:(Option[Int],Boolean)"></a>
+      <a id="excessMillis:(Option[Int],Boolean)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">excessMillis</span><span class="result">: (<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a>], <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@excessMillis:(Option[Int],Boolean)" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#forceGL2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forceGL2:Boolean"></a>
+      <a id="forceGL2:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forceGL2</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@forceGL2:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#frameMillis" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="frameMillis:Double"></a>
+      <a id="frameMillis:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">frameMillis</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Double" class="extype" target="_top">Double</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@frameMillis:Double" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#framerateTarget" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="framerateTarget:Int"></a>
+      <a id="framerateTarget:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">framerateTarget</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@framerateTarget:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#framerateTarget_=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="framerateTarget_=(value:Int):Unit"></a>
+      <a id="framerateTarget_=(Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: framerateTarget_$eq" class="name">framerateTarget_=</span><span class="params">(<span name="value">value: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@framerateTarget_=(value:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#gameStatus" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="gameStatus:DroneWorldSimulator.this.Status"></a>
+      <a id="gameStatus:Status"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gameStatus</span><span class="result">: <a href="#StatusextendsAnyRef" class="extmbr" name="cwinter.codecraft.core.game.DroneWorldSimulator.Status">Status</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@gameStatus:DroneWorldSimulator.this.Status" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="cwinter.codecraft.core.game.DroneWorldSimulator">DroneWorldSimulator</a> → Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#gameStatus_=" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="gameStatus_=(value:DroneWorldSimulator.this.Status):Unit"></a>
+      <a id="gameStatus_=(Status):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: gameStatus_$eq" class="name">gameStatus_=</span><span class="params">(<span name="value">value: <a href="#StatusextendsAnyRef" class="extmbr" name="cwinter.codecraft.core.game.DroneWorldSimulator.Status">Status</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@gameStatus_=(value:DroneWorldSimulator.this.Status):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#graphicsEnabled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="graphicsEnabled:Boolean"></a>
+      <a id="graphicsEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">graphicsEnabled</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@graphicsEnabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#initialCameraPos" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initialCameraPos:cwinter.codecraft.util.maths.Vector2"></a>
+      <a id="initialCameraPos:Vector2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initialCameraPos</span><span class="result">: <span class="extype" name="cwinter.codecraft.util.maths.Vector2">Vector2</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@initialCameraPos:cwinter.codecraft.util.maths.Vector2" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="cwinter.codecraft.core.game.DroneWorldSimulator">DroneWorldSimulator</a> → Simulator</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#isPaused" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isPaused:Boolean"></a>
+      <a id="isPaused:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isPaused</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@isPaused:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#measuredFramerate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="measuredFramerate:Int"></a>
+      <a id="measuredFramerate:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">measuredFramerate</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@measuredFramerate:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#monitor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="monitor:cwinter.codecraft.core.PerformanceMonitor"></a>
+      <a id="monitor:PerformanceMonitor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">monitor</span><span class="result">: <span class="extype" name="cwinter.codecraft.core.PerformanceMonitor">PerformanceMonitor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@monitor:cwinter.codecraft.core.PerformanceMonitor" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#namedDrones" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="namedDrones:scala.collection.immutable.Map[String,cwinter.codecraft.core.api.Drone]"></a>
+      <a id="namedDrones:Map[String,Drone]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">namedDrones</span><span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../api/Drone.html" class="extype" name="cwinter.codecraft.core.api.Drone">Drone</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@namedDrones:scala.collection.immutable.Map[String,cwinter.codecraft.core.api.Drone]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#replayString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="replayString:Option[String]"></a>
+      <a id="replayString:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">replayString</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@replayString:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run(steps:Int):Unit"></a>
+      <a id="run(Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">(<span name="steps">steps: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@run(steps:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run():Unit"></a>
+      <a id="run():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@run():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#settings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="settings:cwinter.codecraft.core.game.Settings"></a>
+      <a id="settings:Settings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">settings</span><span class="result">: <a href="Settings.html" class="extype" name="cwinter.codecraft.core.game.Settings">Settings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@settings:cwinter.codecraft.core.game.Settings" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Additional settings that don't affect gameplay.</p>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#stopped" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stopped:Boolean"></a>
+      <a id="stopped:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stopped</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@stopped:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#tFrameCompleted" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tFrameCompleted:Long"></a>
+      <a id="tFrameCompleted:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tFrameCompleted</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@tFrameCompleted:Long" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="cwinter.codecraft">cwinter.codecraft</a>] </dd><dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#terminate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="terminate():Unit"></a>
+      <a id="terminate():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">terminate</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@terminate():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#textModels" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="textModels:Iterable[cwinter.codecraft.graphics.engine.TextModel]"></a>
+      <a id="textModels:Iterable[TextModel]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">textModels</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="cwinter.codecraft.graphics.engine.TextModel">TextModel</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@textModels:Iterable[cwinter.codecraft.graphics.engine.TextModel]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="cwinter.codecraft.core.game.DroneWorldSimulator">DroneWorldSimulator</a> → Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#tickPeriod" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tickPeriod:Int"></a>
+      <a id="tickPeriod:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tickPeriod</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@tickPeriod:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="cwinter.codecraft.graphics.engine.Simulator#timestep" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="timestep:Int"></a>
+      <a id="timestep:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">timestep</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@timestep:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Simulator</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#togglePause" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="togglePause():Unit"></a>
+      <a id="togglePause():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">togglePause</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@togglePause():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="cwinter.codecraft.core.game.DroneWorldSimulator">DroneWorldSimulator</a> → Simulator</dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update():Unit"></a>
+      <a id="update():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">update</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@update():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="cwinter.codecraft.core.game.DroneWorldSimulator">DroneWorldSimulator</a> → Simulator</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#winner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="winner:Option[cwinter.codecraft.core.api.Player]"></a>
+      <a id="winner:Option[Player]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">winner</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="../api/Player.html" class="extype" name="cwinter.codecraft.core.api.Player">Player</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@winner:Option[cwinter.codecraft.core.api.Player]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the winning player.</p>
+    </li><li name="cwinter.codecraft.core.game.DroneWorldSimulator#worldBoundaries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="worldBoundaries:cwinter.codecraft.graphics.engine.ModelDescriptor[Unit]"></a>
+      <a id="worldBoundaries:ModelDescriptor[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">worldBoundaries</span><span class="result">: <span class="extype" name="cwinter.codecraft.graphics.engine.ModelDescriptor">ModelDescriptor</span>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#cwinter.codecraft.core.game.DroneWorldSimulator@worldBoundaries:cwinter.codecraft.graphics.engine.ModelDescriptor[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="cwinter.codecraft.graphics.engine.Simulator">
+              <h3>Inherited from <span class="extype" name="cwinter.codecraft.graphics.engine.Simulator">Simulator</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
